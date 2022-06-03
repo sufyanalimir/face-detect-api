@@ -10,7 +10,6 @@ const image = require("./controllers/image");
 
 const { handleImage, handleApiCall } = image;
 
-process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0;
 const db = knex({
   client: "pg",
   connectionString: process.env.DATABASE_URL,
